@@ -1,0 +1,25 @@
+*{
+   font-family: sans-serif;
+}
+table{
+   border-spacing: 0;
+}
+
+table, td{
+   padding: 3px;
+   border: 1px solid black;
+}
+
+td, th{
+   padding: 5px 20px;
+}
+thead{
+   background-color: tomato;
+}
+tbody{
+   color: black;
+   background-color: rgb(255, 255, 255);
+}
+tfoot{
+   background-color: royalblue;
+}

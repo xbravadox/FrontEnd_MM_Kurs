@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta name="author" content="Jan Kowalski">
+   <meta name="keywords" content="kilka, słów, opisujących, zawartość, strony">
+   <meta name="description" content="Krótki opis strony">
+   <title>Pierwsza strona</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+   <h3>Formularz</h3>
+<form action="">
+   <p>Napisz coś</p>
+   <textarea name="" id="" cols="30" rows="10"></textarea>
+   <br>
+   <button>Zapisz</button>
+   <button disabled>klikni mnie</button>
+</form>
+
+<h3>Lista rozwijana</h3>
+<select name="" id="">
+   <option value="">czerwony</option>
+   <option value="">niebieski</option>
+   <option value="" disabled>zielony</option>
+</select>
+
+<h3>Pola wejściowe</h3>
+<h4>Inputy</h4>
+<input type="text" placeholder="wpisz coś">
+<input type="password" placeholder="podaj hasło">
+<input type="number" placeholder="tylko cyfry">
+<input type="button" value="Przycisk">
+<input type="color">
+<input type="date">
+
+<h4>Checkbox i radio</h4>
+<input type="checkbox">
+<input type="checkbox" checked>
+<input type="radio">
+<input type="radio">
+
+
+<h3>Formatowanie textu</h3>
+<b>Pogrubiony tekst w tagu 'b'. - wartość CSS</b><br>
+<strong>Pogrubiony tekst w tagu 'strong'. - wartość semantycza</strong><br><br>
+
+<i>Teks pisany kursywą w tagu 'i' - wartość CSS</i><br>
+<em>Teks pisany kursywą w tagu 'em' - wartość semantycza</em><br><br>
+
+<u>Podkreślenie tekstu w tagu 'u'. - wartość CSS</u><br><br>
+
+<del>Przekreślony tekst w tagu 'del'. - teoretycznie usunięty, ale jednak widoczny.</del> <br>
+<s>Przekreślony tekst w tagu 's'. - zawartość nieaktualna.</s><br><br>
+
+<p>Wyszczególnienie <mark>fragmentu tekstu kolorem</mark>  w tagu 'mark'.</p><br>
+
+<p>2 <sup>2</sup> =4 - indeks górny w tagu 'sup'.</p>
+<p>2 <sub>n</sub> >4 - indeks dolny w tagu 'sub'.</p><br>
+
+<pre>Formatowanie tekstu w tagu 'pre'.
+   W tym tagu tekst uwzględnia białe znaki i jest prezentowany
+   tak          jak jest zapisany
+         w
+   HTML.
+</pre><br>
+
+<p>Użycie znaku tzw. twardej &nbsp;&nbsp;&nbsp; spacji '(& nbsp;)', aby zastosować większą odległość niż jedna spacja w tekście.  </p>
+
+<h3>Listy</h3>
+
+<h4>Lista nieuporządkowana</h4>
+<ul >
+   <li>element listy 1</li>
+   <li>element listy 2</li>
+   <li>element listy 3</li>
+</ul>
+
+<h4>Lista uporządkowana</h4>
+<ol>
+   <li>element listy</li>
+   <li>element listy</li>
+   <li>element listy</li>
+</ol>
+
+<h3>Tabele</h3>
+<p>table - rodzic</p>
+<p>tr - wiersz</p>
+<p>th - nagłówki kolumnn</p>
+<p>td - komórka</p>
+<table>
+   <tr>
+      <th>Kolumna 1</th>
+      <th>Kolumna 2</th>
+   </tr>
+   <tr>
+      <td>TD nr1</td>
+      <td>TD nr2</td>
+   </tr>
+   <tr>
+      <td>TD nr3</td>
+      <td>TD nr4</td>
+   </tr>
+</table>
+
+<br>
+<p>Tabela filmów - rowspan</p>
+<table>
+   <tr>
+      <th>Tytuł</th>
+      <th>Gatunek</th>
+   </tr>
+   <tr>
+      <td>Kiler</td>
+      <td rowspan="3">Komedia</td>
+   </tr>
+   <tr>
+      <td>Kac Vegas</td>
+   </tr>
+   <tr>
+      <td>Deadpool</td>
+   </tr>
+   <tr>
+      <td>Avatar</td>
+      <td>Fantasy</td>
+   </tr>
+</table>
+
+<br>
+<p>Plan dnia - colspan</p>
+<table>
+   <tr>
+      <td></td>
+      <td>Piątek</td>
+      <td>Sobota</td>
+   </tr>
+   <tr>
+      <td>18:00</td>
+      <td>FrontEnd</td>
+      <td>Angielski</td>
+   </tr>
+   <tr>
+      <td>21:00</td>
+      <td colspan="2">Webinar Forex</td>
+   </tr>
+</table>
+
+<p>Tabela z thead, tbody i tfoot</p>
+<table>
+   <caption>Rachunek</caption>
+   <thead>
+      <th>Danie</th>
+      <th>Cena</th>
+   </thead>
+   <tbody>
+      <tr>
+         <td>Kotlet schabowy</td>
+         <td>15 PLN</td>
+      </tr>
+      <tr>
+         <td>Sok</td>
+         <td>8PLN</td>
+      </tr>
+   </tbody>
+   <tfoot>
+      <tr>
+         <td>SUMA</td>
+         <td>23PLN</td>
+      </tr>
+   </tfoot>
+</table>
+
+<h3>Skrypty JS</h3>
+
+<noscript>
+   <p>Sprawdx ustawienia obsługi JavaScript</p>
+</noscript>
+
+<h3>Pozostałe tagi</h3>
+<audio src="" controls="controls"></audio><br>
+<video src="" controls="controls"></video><br>
+<img src="https://cdn.pixabay.com/photo/2020/12/14/14/04/winding-road-5830986_960_720.jpg" alt=""><br>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/_-phoPBUnQA" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>
