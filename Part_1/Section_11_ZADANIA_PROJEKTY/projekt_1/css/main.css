@@ -1,0 +1,165 @@
+* {
+   box-sizing: border-box;
+   margin: 0;
+   padding: 0;
+}
+
+html {
+   font-size: 10px;
+}
+
+body {
+   font-family: 'Montserrat', sans-serif;
+}
+
+p {
+   font-size: 1.6rem;
+}
+
+/* HEADER */
+.header-img {
+   position: relative;
+   height: 250px;
+   background-image: url('../img/planet.jpg');
+   background-repeat: no-repeat;
+   background-position: 60% 22%;
+}
+
+.header-bg {
+   height: 100%;
+   width: 100%;
+   background-color: rgba(0, 3, 27, .4);
+}
+
+.header-text {
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50% -50%);
+   color: #fff;
+   text-shadow: 3px 3px 5px #000;
+}
+
+.header-text h1 {
+   padding-bottom: 10px;
+   font-size: 5rem;
+}
+
+/* NAWIGACJA */
+nav {
+   height: 50px;
+   background-color: rgb(54, 54, 54);
+   text-align: center;
+   line-height: 50px;
+}
+
+nav li {
+   display: inline-block;
+}
+
+nav li a {
+   padding: 0 50px;
+   color: #fff;
+   text-decoration: none;
+   text-transform: uppercase;
+   font-size: 1.6rem;
+   font-weight: bold;
+   letter-spacing: 2px;
+   cursor: pointer;
+   transition: color .3s;
+}
+
+nav li a:hover {
+   color: rgb(0, 195, 195);
+}
+
+/* MAIN */
+main {
+   width: 60%;
+   margin: 50px auto;
+}
+
+.about-us-heading {
+   margin-bottom: 30px;
+   font-size: 3.2rem;
+   text-transform: uppercase;
+   text-align: center;
+}
+
+section {
+   margin: 40px 0;
+}
+
+.about-us-section {
+   position: relative;
+   height: 300px;
+   background-attachment: fixed;
+   background-position: center;
+   border-top-left-radius: 50px;
+   border-bottom-right-radius: 50px;
+}
+
+.top {
+   background-image: url('../img/cup-of-coffee.jpg');
+}
+
+.middle {
+   background-image: url('../img/mobile-phone.jpg');
+}
+
+.bottom {
+   background-image: url('../img/office.jpg');
+}
+
+.about-us-text {
+   position: absolute;
+   bottom: 20px;
+   padding: 20px 40px;
+   color: #fff;
+   z-index: 1;
+}
+
+.about-us-text h3 {
+   padding-bottom: 10px;
+   font-size: 2.2rem;
+   text-transform: uppercase;
+}
+
+.about-us-bg {
+   position: absolute;
+   bottom: 0;
+   height: 50%;
+   width: 100%;
+   background-color: rgba(0, 0, 0, .8);
+   border-bottom-right-radius: 50px;
+}
+
+/* FOOTER */
+footer {
+   height: 80px;
+   line-height: 80px;
+   background-color: rgb(54, 54, 54);
+   color: #ccc;
+   text-align: center;
+   font-size: 18px;
+}
+
+.foot-ico {
+   margin-left: 45px;
+}
+
+.foot-ico i {
+   padding: 0 5px;
+   color: #ccc;
+   font-size: 28px;
+   transition: color .3s;
+}
+
+.foot-ico i:hover {
+   color: rgb(0, 195, 195);
+}
+
+/* USŁUGI MAIN */
+.services li {
+   font-size: 1.6rem;
+}
