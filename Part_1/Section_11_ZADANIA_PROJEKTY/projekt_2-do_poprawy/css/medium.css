@@ -23,6 +23,15 @@
    transition: color .3s;
 }
 
-.nav-desktop li a:hover{
+.nav-desktop li a:hover {
    color: dodgerblue;
+}
+
+/* HEADER */
+.header-text h1 {
+   font-size: 46px;
+}
+
+.header-text p {
+   font-size: 20px;
 }

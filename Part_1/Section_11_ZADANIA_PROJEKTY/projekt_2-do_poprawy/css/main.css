@@ -1,0 +1,177 @@
+* {
+   box-sizing: border-box;
+   margin: 0;
+   padding: 0;
+}
+
+body {
+   font-family: 'Raleway', sans-serif;
+}
+
+.hero-bg {
+   width: 100%;
+   height: 100%;
+   background-color: rgba(0, 0, 0, .72);
+}
+
+.wrapper {
+   margin: 0 auto;
+   width: 100%;
+   max-width: 1200px;
+}
+
+/* NAWIGACJA */
+nav {
+   height: 60px;
+   line-height: 60px;
+   background-color: rgb(192, 192, 192);
+   text-align: center;
+   overflow: hidden;
+}
+
+.nav-mobile {
+   margin-right: 100%;
+}
+
+.nav-mobile button {
+   padding: 0px 30px;
+   font-size: 30px;
+   line-height: 60px;
+   background: none;
+   border: none;
+}
+
+.nav-desktop {
+   display: none;
+}
+
+/* HEADER */
+.header-img {
+   position: relative;
+   height: 330px;
+   background-image: url('../img/wolf_small.jpg');
+   background-repeat: no-repeat;
+   background-position: center;
+}
+
+.header-text {
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   color: #fff;
+   text-align: center;
+   text-shadow: 3px 3px 3px #000;
+}
+
+.header-text h1 {
+   margin-bottom: 5px;
+}
+
+.header-text h1 span {
+   text-transform: uppercase;
+   color: dodgerblue;
+}
+
+.header-text p {
+   font-size: 14px;
+}
+
+/* MAIN */
+main h2 {
+   margin: 20px;
+   font-size: 28px;
+   text-align: center;
+   text-transform: uppercase;
+}
+
+.underline {
+   position: relative;
+}
+
+.line {
+   position: absolute;
+   left: calc(50% - 30px);
+   bottom: -5px;
+   width: 60px;
+   height: 3px;
+   background-color: rgb(0, 140, 255);
+}
+
+section {
+   margin: 80px;
+}
+
+.products {
+   font-size: 0;
+}
+
+.about-us p {
+   padding: 0 20px;
+}
+
+.main-product {
+   position: relative;
+   display: inline-block;
+   height: 260px;
+   width: 100%;
+   background-size: cover;
+   background-position: center;
+}
+
+.main-product:hover .product-text h3 {
+   transform: scale(1.2);
+}
+
+.first-product {
+   background-image: url('../img/children-593313_1920.jpg');
+}
+
+.second-product {
+   background-image: url('../img/keyboard-70506_1920.jpg');
+}
+
+.third-product {
+   background-image: url('../img/apple-1851464_1920.jpg');
+}
+
+.fourth-product {
+   background-image: url('../img/laptop-1483974_1920.jpg');
+}
+
+.product-text {
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   font-size: 16px;
+   text-align: center;
+   color: #fff;
+   text-shadow: 3px 3px 3px #000;
+   font-size: 27px;
+   text-transform: uppercase;
+}
+
+.product-text h3 {
+   transition: transform .3s;
+}
+
+@media (min-width: 400px) {
+   .header-text h1 {
+      margin-bottom: 10px;
+      font-size: 36px;
+   }
+
+   .header-text p {
+      font-size: 18px;
+   }
+
+   .product-text {
+      font-size: 19px;
+   }
+
+   .product-text h3 {
+      /* font-size: 36px; */
+      /* margin-bottom: 10px; */
+   }
+}
