@@ -1,0 +1,51 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #333;
+}
+
+.square {
+  width: 200px;
+  height: 200px;
+  margin: 50px;
+}
+
+.item1 {
+  background-color: gold;
+}
+
+.item2 {
+  background-color: lime;
+}
+
+.item3 {
+  background-color: tomato;
+}
+
+.square2 {
+  margin: 30px;
+  width: 200px;
+  height: 200px;
+  background: gold;
+  border-radius: 25px;
+}
+
+.success {
+  background-color: lime;
+}
+
+.warning {
+  background-color: tomato;
+}
+
+.square3 {
+  width: 500px;
+  height: 500px;
+  background-color: gold;
+}
+/*# sourceMappingURL=style.css.map */

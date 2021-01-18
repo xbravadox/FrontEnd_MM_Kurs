@@ -1,0 +1,50 @@
+@import reset
+
+$first-color: #333
+$colors: (top: gold,center: lime,bottom: tomato)
+
+@mixin addons
+   background: gold
+   border-radius: 25px
+
+@mixin color($bgColor)
+   background-color: $bgColor
+   
+
+
+
+body
+   background-color: $first-color
+
+.square
+   width: 200px
+   height: 200px
+   margin: 50px
+
+.item1
+   background-color: map-get($colors, top)
+
+.item2
+   background-color: map-get($colors, center)
+
+.item3
+   background-color: map-get($colors, bottom)
+
+.square2
+   margin: 30px
+   width: 200px
+   height: 200px
+   @include addons
+
+.success
+   @include color(lime)
+    
+
+.warning
+   @include color(tomato)
+
+.square3
+   width: 500px
+   height: 500px
+   background-color: gold
+    

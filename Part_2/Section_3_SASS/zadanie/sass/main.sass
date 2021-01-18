@@ -1,0 +1,50 @@
+@import reset
+
+$text-color: gold
+$bg_color: lightblue
+$bg_section: dodgerblue
+
+@mixin circle
+   width: 100px
+   height: 100px
+   margin: 30px auto
+   background-color: lime
+   border: 3px solid black
+   border-radius: 50%
+
+html
+   font-size: 10px
+
+body
+   font-family: sans-serif
+
+section
+   height: 25vh
+   text-align: center
+
+h1
+   font-size: 3rem
+   
+h2
+   font-size: 2.4rem
+
+h3
+   font-size: 1.8rem
+   
+p
+   font-size: 1.6rem
+
+section  h1, h2, h3
+   color: $text-color
+
+.odd
+   background-color: $bg_color
+
+.even
+   background-color: $bg_section
+
+.circle
+   @include circle
+
+
+
