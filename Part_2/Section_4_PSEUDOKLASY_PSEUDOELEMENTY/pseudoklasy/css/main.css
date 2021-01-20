@@ -1,0 +1,31 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: sans-serif;
+  color: #fff;
+  background-color: #333333;
+  font-size: 30px;
+  margin: 50px;
+}
+
+div {
+  margin: 50px;
+}
+
+h5 {
+  color: tomato;
+}
+
+h2:nth-of-type(1) {
+  color: lime;
+}
+
+h2:nth-last-of-type(1) {
+  color: dodgerblue;
+}
+/*# sourceMappingURL=main.css.map */

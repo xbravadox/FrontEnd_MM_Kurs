@@ -1,0 +1,59 @@
+@charset "UTF-8";
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: sans-serif;
+  color: #ffffff;
+  background-color: #333333;
+  font-size: 25px;
+  margin: 10px 30px;
+}
+
+p {
+  margin: 100px;
+  text-align: center;
+}
+
+p::before {
+  content: 'Cześć ';
+  color: lime;
+}
+
+p::after {
+  content: '! :-)';
+}
+
+.square {
+  margin: 0 auto;
+  width: 300px;
+  height: 300px;
+  background-color: tomato;
+}
+
+.square::after {
+  content: '';
+  display: block;
+  width: 50px;
+  height: 50px;
+  background-color: royalblue;
+}
+
+a {
+  display: block;
+  color: #fff;
+  text-decoration: none;
+}
+
+[href='cnn'] {
+  color: gold;
+}
+
+[href='google'] {
+  color: lime;
+}
+/*# sourceMappingURL=main.css.map */
