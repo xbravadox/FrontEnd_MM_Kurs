@@ -1,0 +1,106 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: sans-serif;
+  color: #ffffff;
+  background-color: #333333;
+  font-size: 36px;
+}
+
+.colors {
+  height: 30vh;
+  background-image: linear-gradient(80deg, tomato, tomato, gold, royalblue, lime, royalblue, gold, tomato, tomato);
+  background-size: 800%;
+  -webkit-animation: colors 5s linear infinite;
+          animation: colors 5s linear infinite;
+}
+
+@-webkit-keyframes colors {
+  form {
+    background-position: 0 0;
+  }
+  to {
+    background-position: 100%;
+  }
+}
+
+@keyframes colors {
+  form {
+    background-position: 0 0;
+  }
+  to {
+    background-position: 100%;
+  }
+}
+
+.wrapper {
+  margin: 50px 0;
+  text-align: center;
+  line-height: 30px;
+}
+
+.squares {
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  background-color: #fff;
+  border-radius: 2px;
+  -webkit-animation: fade 1.4s infinite;
+          animation: fade 1.4s infinite;
+}
+
+.squares:nth-child(2n) {
+  -webkit-animation: fade 1s infinite;
+          animation: fade 1s infinite;
+}
+
+.squares:nth-child(3n) {
+  -webkit-animation: fade .5s .5s infinite;
+          animation: fade .5s .5s infinite;
+}
+
+.squares:nth-child(4n) {
+  -webkit-animation: fade .8s .1s infinite;
+          animation: fade .8s .1s infinite;
+}
+
+.squares:nth-child(5n) {
+  -webkit-animation: fade 1s .7s infinite;
+          animation: fade 1s .7s infinite;
+}
+
+@-webkit-keyframes fade {
+  10% {
+    opacity: 1;
+    background-color: #f600ff;
+  }
+  50% {
+    opacity: 0;
+    background-color: #006bff;
+  }
+  90% {
+    opacity: 1;
+    background-color: #00ff22;
+  }
+}
+
+@keyframes fade {
+  10% {
+    opacity: 1;
+    background-color: #f600ff;
+  }
+  50% {
+    opacity: 0;
+    background-color: #006bff;
+  }
+  90% {
+    opacity: 1;
+    background-color: #00ff22;
+  }
+}
+/*# sourceMappingURL=main.css.map */

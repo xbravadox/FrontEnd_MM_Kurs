@@ -1,0 +1,149 @@
+*
+   box-sizing: border-box
+   margin: 0
+   padding: 0
+
+body
+   overflow: hidden
+   // tło
+#sky
+   position: relative
+   display: block
+   height: 55vh
+   background-color: royalblue
+   animation: sky 10s linear infinite
+
+@keyframes sky
+   0%
+      background-color: #001A33
+   40%
+      background-color: royalblue
+   60%
+      background-color: royalblue
+   100%
+      background-color: #001A33
+      
+
+.sun
+   position: absolute
+   top: 35px
+   left: 70px
+   height: 80px
+   width: 80px
+   border-radius: 50%
+   box-shadow: 0 0 70px  orange
+   background-color: orange
+   animation: sun 10s linear infinite
+
+@keyframes sun
+   0%
+      top: 1000px
+   30%
+      box-shadow: 0 0 30px yellow
+   40%
+      top: 50px
+      box-shadow: 0 0 30px orange
+   50%
+      box-shadow: 0 0 30px yellow
+   60%
+      top: 50px  
+      box-shadow: 0 0 30px orange
+   70%
+      box-shadow: 0 0 30px yellow
+   100%
+      top: 1000px
+
+#ground
+   position: relative
+   height: 45vh
+   background-color: #4a3535
+
+.grass
+   position: absolute
+   top: 0
+   width: 100vw
+   height: 25vh
+   background-color: lime
+
+.road
+   position: absolute
+   top: 4vh
+   width: 100vw
+   height: 15vh
+   background-color: gray
+
+   // samochód
+.car
+   position: absolute
+   top: 40px
+   left: 200px
+   width: 150px
+   height: 70px
+   background-color: tomato
+   border-top-right-radius: 35px
+   border-top-left-radius: 35px
+   animation: car 4s linear infinite
+
+@keyframes car
+   form
+      left: -20%
+   to
+      left: 120%
+
+.car:before, .car:after
+   content: ''
+   position: absolute
+   bottom: 0
+   width: 40px
+   height: 40px
+   background-color: tomato
+
+.car:before
+   right: -5px
+   border-top-right-radius: 5px
+
+.car:after
+   left: -5px
+   border-top-left-radius: 5px
+
+.windows
+   position: absolute
+   top: 0
+   width: 45px
+   height: 30px
+   background-color: dodgerblue
+
+.front-window
+   right: 0
+   border-top-right-radius: 50px
+
+.rear-window
+   left: 0
+   border-top-left-radius: 50px
+
+.wheels
+   position: absolute
+   bottom: -15px
+   width: 30px
+   height: 30px
+   border-radius: 50%
+   border: 2px dashed #ffffff
+   background-color: #000
+   animation: wheels 2s linear infinite
+
+@keyframes wheels
+   from
+      transform: rotate(0)
+   to
+      transform: rotate(360deg)
+      
+
+.front-wheel
+   right: 20px
+   
+.rear-wheel
+   left: 20px
+   z-index: 10
+
+
+

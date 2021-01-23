@@ -1,0 +1,84 @@
+*
+   box-sizing: border-box
+   margin: 0
+   padding: 0
+
+body
+   font-family: sans-serif
+   color: #ffffff
+   background-color: #333333
+   font-size: 36px
+
+   // keyframes
+.square
+   margin: 50px auto
+   width: 400px
+   height: 400px
+   background-color: gold
+   border: 3px solid black
+   animation: test 5s 1s infinite
+   // animation-direction: alternate
+
+.square:hover
+   animation-play-state: paused
+
+@keyframes test
+   0%
+      width: 400px
+      background-color: gold
+
+   30%
+      width: 150px
+      height: 150px
+      border-radius: 50%
+
+   50%
+      width: 800px
+      background-color: royalblue
+
+   80%
+      width: 200px
+
+   100%
+      width: 400px
+      background-color: lime
+
+   // fill mode
+.abc
+   width: 50px
+   height: 100px
+   background-color: black
+   margin: 10px
+   animation: test2 2s 4s cubic-bezier(0.1, 0.7, 1.0, 0.1)
+
+.text
+   position: absolute
+   right: 10px
+   line-height: 100px
+   text-transform: uppercase
+   border-bottom: 1px solid black
+
+.one
+   animation-fill-mode: none
+
+.two
+   animation-fill-mode: forwards
+
+.three
+   animation-fill-mode: backwards
+
+.four
+   animation-fill-mode: both
+
+@keyframes test2
+
+   0%
+      width: 50px
+      background-color: lime
+
+   50%
+      background-color: royalblue
+
+   100%
+      width: 500px
+      background-color: tomato

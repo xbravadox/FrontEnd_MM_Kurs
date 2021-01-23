@@ -1,0 +1,63 @@
+*
+   box-sizing: border-box
+   margin: 0
+   padding: 0
+
+body
+   background-color: #333333
+   overflow: hidden
+   font-size: 36px
+   color: #fff
+   text-align: center
+
+h3
+   margin: 50px auto
+   text-transform: uppercase
+   text-align: center
+
+.square
+   position: relative
+   display: inline-block
+   top: 50px
+   left: 100px
+   right: 300px
+   width: 300px
+   height: 300px
+   border: 3px solid black
+
+.one
+   margin-right: 100px
+   background-color: gold
+   animation: bad 4s 1, move 4s 1
+
+.two
+   background-color: lime
+   animation: move 4s 1 4s
+
+.two:after
+   position: absolute
+   top: -3px
+   left: -3px
+   display: 
+   content: ''
+   width: 100%
+   height: 100%
+   box-shadow: 0 0 80px lime
+   opacity: 0
+   animation: good 4s 1 4s
+
+@keyframes move
+   50%
+      top: 400px  
+   100%
+      top: 50px
+
+@keyframes bad  
+   100%
+      box-shadow: 0 0 80px gold
+
+@keyframes good    
+   100%
+      opacity: 1
+      
+      

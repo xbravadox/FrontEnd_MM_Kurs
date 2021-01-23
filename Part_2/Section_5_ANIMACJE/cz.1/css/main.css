@@ -1,0 +1,140 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: sans-serif;
+  color: #ffffff;
+  background-color: #333333;
+  font-size: 36px;
+}
+
+.square {
+  margin: 50px auto;
+  width: 400px;
+  height: 400px;
+  background-color: gold;
+  border: 3px solid black;
+  -webkit-animation: test 5s 1s infinite;
+          animation: test 5s 1s infinite;
+}
+
+.square:hover {
+  -webkit-animation-play-state: paused;
+          animation-play-state: paused;
+}
+
+@-webkit-keyframes test {
+  0% {
+    width: 400px;
+    background-color: gold;
+  }
+  30% {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+  }
+  50% {
+    width: 800px;
+    background-color: royalblue;
+  }
+  80% {
+    width: 200px;
+  }
+  100% {
+    width: 400px;
+    background-color: lime;
+  }
+}
+
+@keyframes test {
+  0% {
+    width: 400px;
+    background-color: gold;
+  }
+  30% {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+  }
+  50% {
+    width: 800px;
+    background-color: royalblue;
+  }
+  80% {
+    width: 200px;
+  }
+  100% {
+    width: 400px;
+    background-color: lime;
+  }
+}
+
+.abc {
+  width: 50px;
+  height: 100px;
+  background-color: black;
+  margin: 10px;
+  -webkit-animation: test2 2s 4s cubic-bezier(0.1, 0.7, 1, 0.1);
+          animation: test2 2s 4s cubic-bezier(0.1, 0.7, 1, 0.1);
+}
+
+.text {
+  position: absolute;
+  right: 10px;
+  line-height: 100px;
+  text-transform: uppercase;
+  border-bottom: 1px solid black;
+}
+
+.one {
+  -webkit-animation-fill-mode: none;
+          animation-fill-mode: none;
+}
+
+.two {
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+.three {
+  -webkit-animation-fill-mode: backwards;
+          animation-fill-mode: backwards;
+}
+
+.four {
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+}
+
+@-webkit-keyframes test2 {
+  0% {
+    width: 50px;
+    background-color: lime;
+  }
+  50% {
+    background-color: royalblue;
+  }
+  100% {
+    width: 500px;
+    background-color: tomato;
+  }
+}
+
+@keyframes test2 {
+  0% {
+    width: 50px;
+    background-color: lime;
+  }
+  50% {
+    background-color: royalblue;
+  }
+  100% {
+    width: 500px;
+    background-color: tomato;
+  }
+}
+/*# sourceMappingURL=main.css.map */
