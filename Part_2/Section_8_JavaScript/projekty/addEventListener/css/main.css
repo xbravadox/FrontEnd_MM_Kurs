@@ -1,0 +1,44 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #333;
+  text-align: center;
+}
+
+button {
+  margin: 30px 50px;
+  padding: 15px 35px;
+  background-color: transparent;
+  color: #fff;
+  font-size: 25px;
+  border: 2px solid #ffffff;
+  border-radius: 15px;
+  outline: none;
+}
+
+.color {
+  margin: 50px auto;
+  width: 300px;
+  height: 300px;
+  background-color: gold;
+}
+
+.remove-color {
+  width: 70%;
+  background-color: gold;
+  color: #000000;
+}
+
+.blue {
+  background-color: royalblue;
+}
+
+.red {
+  background-color: tomato;
+}
+/*# sourceMappingURL=main.css.map */

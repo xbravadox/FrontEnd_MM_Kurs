@@ -7,5 +7,16 @@
 
 body {
   background-color: #333;
+  text-align: center;
+  color: #fff;
+}
+
+.title {
+  margin-top: 50px;
+}
+
+button {
+  margin: 30px;
+  padding: 10px 30px;
 }
 /*# sourceMappingURL=main.css.map */

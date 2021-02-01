@@ -1,0 +1,78 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height: 100vh;
+  background-color: #333333;
+  text-align: center;
+}
+
+.item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-size: cover;
+  -webkit-transition: .6s;
+  transition: .6s;
+}
+
+.item1 {
+  height: 40px;
+  background-image: url("https://cdn.pixabay.com/photo/2019/05/28/12/09/bee-4235093_960_720.jpg");
+  background-position: center;
+}
+
+.item2 {
+  height: 300px;
+  background-image: url("https://cdn.pixabay.com/photo/2021/01/19/19/28/street-5932230_960_720.jpg");
+  background-position: center;
+}
+
+.show {
+  height: 300px;
+}
+
+section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 50px;
+}
+
+button {
+  margin: 0 30px;
+  padding: 10px 30px;
+  background: none;
+  border-radius: 5px;
+  border: 2px solid #00ffae;
+  outline: none;
+  color: #00ffae;
+  font-size: 36px;
+  -webkit-transition: .6s;
+  transition: .6s;
+}
+
+button:hover {
+  color: #00ffae;
+  -webkit-box-shadow: 3px 3px 10px #00ffae;
+          box-shadow: 3px 3px 10px #00ffae;
+}
+
+.fas {
+  -webkit-transition: .6s;
+  transition: .6s;
+}
+/*# sourceMappingURL=main.css.map */
