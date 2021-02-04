@@ -1,0 +1,70 @@
+*, *::after, *::before
+    box-sizing: border-box
+    margin: 0
+    padding: 0
+
+html
+    scroll-behavior: smooth
+
+body
+    position: relative
+    font-family: 'Montserrat', sans-serif
+    background-color: #333
+
+.blue-text
+    color: #039dff
+
+
+// NAWIGACJA
+nav
+    text-transform: uppercase
+
+    a, i
+        color: #fff
+        transition: color .3s
+
+    a:hover
+        color: #039dff
+
+    i
+        padding: 10px
+
+    .navbar-brand
+        font-weight: bold
+
+    .active 
+        color: #039dff
+
+// HEADER
+header 
+    color: #fff
+
+    h1
+        text-transform: uppercase
+
+    .hero-img
+        position: relative
+        height: 100vh
+        background-image: url('../img/hero-img.jpg')
+        background-position: center
+        background-size: cover
+        background-attachment: fixed
+        z-index: 0
+
+    .hero-shadow
+        position: absolute
+        width: 100%
+        height: 100%
+        background-color: rgba(0,0,0,.8)
+        z-index: -10
+
+    .hero-text 
+        display: flex
+        justify-content: center
+        align-items: center
+        flex-direction: column
+        height: 100%
+        text-align: center
+
+        p
+            padding: 10px
