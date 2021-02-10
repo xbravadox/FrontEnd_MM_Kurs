@@ -1,0 +1,50 @@
+header .fa-chevron-down {
+  display: block;
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  font-size: 35px;
+  color: #fff;
+  -webkit-animation: fadeIn 1.5s infinite;
+          animation: fadeIn 1.5s infinite;
+}
+
+#portfolio .carousel-item {
+  position: relative;
+  height: 600px;
+}
+
+#portfolio img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+#portfolio .carousel-caption {
+  position: absolute;
+  left: 0;
+  right: 0;
+  padding: 40px 0;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+#portfolio .carousel-indicators {
+  padding-bottom: 20px;
+}
+
+@media (min-width: 1200px) {
+  #aboutus-hero .jumbotron {
+    padding: 100px 0;
+  }
+}
+
+@media (min-width: 1400px) {
+  #aboutus-hero .jumbotron {
+    padding: 120px 0;
+  }
+}
+/*# sourceMappingURL=large.css.map */

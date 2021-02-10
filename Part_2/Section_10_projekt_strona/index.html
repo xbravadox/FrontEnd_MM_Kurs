@@ -2,66 +2,315 @@
 <html lang="pl">
 
 <head>
-   <meta charset="UTF-8">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>Strona główna</title>
-   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
-      integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
-   <link rel="preconnect" href="https://fonts.gstatic.com">
-   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
-   <link rel="stylesheet" href="./css/main.css">
-   <script src="https://kit.fontawesome.com/3600db8b9c.js" crossorigin="anonymous"></script>
-   <link rel="stylesheet" href="./css/animate.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Strona główna</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+        integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <!-- <link rel="stylesheet" href="./css/animate.css"> -->
+
+    <link rel="stylesheet" href="./css/main.css">
+
+    <link rel="stylesheet" media="screen and (min-width: 576px)" href="./css/small.css">
+    <link rel="stylesheet" media="screen and (min-width: 768px)" href="./css/medium.css">
+    <link rel="stylesheet" media="screen and (min-width: 992px)" href="./css/large.css">
+
+    <script src="https://kit.fontawesome.com/3600db8b9c.js" crossorigin="anonymous"></script>
+
 </head>
 
 <body data-spy="scroll" data-target="#navbar">
 
-   <nav class="navbar navbar-expand-lg fixed-top" id="navbar">
-      <a class="navbar-brand" href="#"><i class="fas fa-headset"></i> pro<span class="blue-text">gamers</span></a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
-          aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-          <i class="fas fa-bars"></i>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-          <div class="navbar-nav ml-auto">
-              <a class="nav-item nav-link active" href="#">Home</a>
-              <a class="nav-item nav-link" href="#aboutus">o nas</a>
-              <a class="nav-item nav-link" href="#portfolio">portfolio</a>
-              <a class="nav-item nav-link" href="#prices">ceny</a>
-              <a class="nav-item nav-link" href="#team">zespół</a>
-              <a class="nav-item nav-link" href="#achievements">osiągnięcia</a>
-              <a class="nav-item nav-link" href="#contact">kontakt</a>
-          </div>
-      </div>
-  </nav>
+    <nav class="navbar navbar-expand-lg fixed-top" id="navbar">
+        <a class="navbar-brand" href="#"><i class="fas fa-laptop-code"></i> pro<span
+                class="blue-text">gramers</span></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="fas fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav ml-auto">
+                <a class="nav-item nav-link active" href="#home">Home</a>
+                <a class="nav-item nav-link" href="#aboutus">o nas</a>
+                <a class="nav-item nav-link" href="#portfolio">portfolio</a>
+                <a class="nav-item nav-link" href="#prices">ceny</a>
+                <a class="nav-item nav-link" href="#team">zespół</a>
+                <a class="nav-item nav-link" href="#achievements">osiągnięcia</a>
+                <a class="nav-item nav-link" href="#contact">kontakt</a>
+            </div>
+        </div>
+    </nav>
 
-  <header>
-      <div class="hero-img">
-          <div class="hero-shadow"></div>
-          <div class="hero-text">
-              <h1>Witajcie w pro<span class="blue-text">gamers</span></h1>
-              <p>W miejscu, gdzie gry tworzymy z passją!</p>
-          </div>
-      </div>
-  </header>
-
-  <div class="test" style="height:100vh"></div>
-
-
-
+    <header id="home">
+        <div class="hero-img">
+            <div class="hero-shadow"></div>
+            <div class="hero-text">
+                <h1 class="os-animation" data-delay=".2s">Witajcie w pro<span class="blue-text">gramers</span></h1>
+                <p class="os-animation" data-delay=".5s">W miejscu, gdzie gry tworzymy z pasją!</p>
+                <a class="btn btn-outline-light os-animation" href="#aboutus" data-delay=".8s">poznaj nas</a>
+            </div>
+            <a href="#aboutus"><i class="fas fa-chevron-down"></i></a>
+        </div>
+    </header>
 
 
-   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-      crossorigin="anonymous"></script>
-   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
-      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
-      crossorigin="anonymous"></script>
-   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js"
-      integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s"
-      crossorigin="anonymous"></script>
-   <script src="./js/animation.js"></script>
-   <script src="./js/jquery.waypoints.min"></script>
+    <main>
+
+        <section id="aboutus" class="scroll-fix">
+            <div class="jumbotron jumbotron-fluid">
+                <div class="wrapper">
+                    <h2>o nas</h2>
+                    <div class="underline"></div>
+
+                    <div class="row">
+                        <div class="col-sm-6 col-md-4 text-center aboutus-hover">
+                            <p><i class="fas fa-desktop"></i></p>
+                            <h3>desktop app</h3>
+                            <p>Aplikacje na komputery PC</p>
+                        </div>
+                        <div class="col-sm-6 col-md-4 text-center aboutus-hover">
+                            <p><i class="far fa-window-maximize"></i></p>
+                            <h3>web app</h3>
+                            <p>Aplikacje webowe</p>
+                        </div>
+                        <div class="col-sm-6 col-md-4 text-center aboutus-hover">
+                            <p><i class="fas fa-mobile-alt"></i></p>
+                            <h3>mobile app</h3>
+                            <p>Aplikacje na urządzenia mobilne</p>
+                        </div>
+                        <div class="col-sm-6 col-md-4 text-center aboutus-hover">
+                            <p><i class="fas fa-file-code"></i></p>
+                            <h3>najwyższe standardy</h3>
+                            <p>Zachowujemy jawyższe standardy pisania kodu</p>
+                        </div>
+                        <div class="col-sm-6 col-md-4 text-center aboutus-hover">
+                            <p><i class="fas fa-cloud"></i></p>
+                            <h3>rozwiązanie chmurowe</h3>
+                            <p>Wykorzystujemy rozwiązania chmurowe</p>
+                        </div>
+                        <div class="col-sm-6 col-md-4 text-center aboutus-hover">
+                            <p><i class="fab fa-connectdevelop"></i></p>
+                            <h3>najnowsze technologie</h3>
+                            <p>Jesteśmy na bieżąco z najnowszymi trendami</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section id="aboutus-hero">
+            <div class="jumbotron jumbotron-fluid">
+                <div class="about-shadow"></div>
+                <div class="wrapper">
+                    <h2>Nasi klienci</h2>
+                    <div class="underline"></div>
+                    <div class="row">
+                        <div class="col-lg-4 text-center about-hero-item">
+                            <h3>accusoft</h3>
+                            <p><i class="fab fa-accusoft"></i></p>
+                        </div>
+                        <div class="col-lg-4 text-center about-hero-item">
+                            <h3>imdb</h3>
+                            <p><i class="fab fa-imdb"></i></p>
+                        </div>
+                        <div class="col-lg-4 text-center about-hero-item">
+                            <h3>linode</h3>
+                            <p><i class="fab fa-linode"></i></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+        <section id="portfolio" class="scroll-fix">
+            <div class="jumbotron jumbotron-fluid">
+                <h2>portfolio</h2>
+                <div class="underline"></div>
+
+                <!-- PORTFOLIO MOBILE -->
+                <div class="wrapper">
+                    <div class="card-deck d-lg-none">
+                        <div class="row justify-content-md-center">
+                            <div class="card">
+                                <img src="./img/portfolio-one.jpg" class="card-img-top" alt="skalisty cliff">
+                                <div class="card-body">
+                                    <h5 class="card-title">Card title</h5>
+                                    <p class="card-text">This is a longer card with supporting text below as a natural
+                                        lead-in
+                                        to
+                                        additional content. This content is a little bit longer.</p>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <img src="./img/portfolio-two.jpg" class="card-img-top" alt="górskie jezioro zimą">
+                                <div class="card-body">
+                                    <h5 class="card-title">Card title</h5>
+                                    <p class="card-text">This card has supporting text below as a natural lead-in to
+                                        additional
+                                        content.</p>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <img src="./img/portfolio-three.jpg" class="card-img-top"
+                                    alt="zachód słońca nad górami">
+                                <div class="card-body">
+                                    <h5 class="card-title">Card title</h5>
+                                    <p class="card-text">This is a wider card with supporting text below as a natural
+                                        lead-in to
+                                        additional content. This card has even longer content than the first to show
+                                        that
+                                        equal
+                                        height action.</p>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <img src="./img/portfolio-four.jpg" class="card-img-top" alt="niebo nad miasteczkiem">
+                                <div class="card-body">
+                                    <h5 class="card-title">Card title</h5>
+                                    <p class="card-text">This is a wider card with supporting text below as a natural
+                                        lead-in to
+                                        additional content. This card has even longer content than the first to show
+                                        that
+                                        equal
+                                        height action.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <!-- PORTFOLIO DESKTOP -->
+                    <div id="carouselExampleCaptions" class="carousel slide d-none d-lg-block" data-ride="carousel">
+                        <ol class="carousel-indicators">
+                            <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+                            <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+                            <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+                            <li data-target="#carouselExampleCaptions" data-slide-to="3"></li>
+                        </ol>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="./img/portfolio-one.jpg" class="d-block w-100" alt="skalisty cliff">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h5>First slide label</h5>
+                                    <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="./img/portfolio-two.jpg" class="d-block w-100" alt="górskie jezioro zimą">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h5>Second slide label</h5>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="./img/portfolio-three.jpg" class="d-block w-100"
+                                    alt="zachód słońca nad górami">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h5>Third slide label</h5>
+                                    <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="./img/portfolio-four.jpg" class="d-block w-100" alt="niebo nad miasteczkiem">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h5>Third slide label</h5>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button"
+                            data-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#carouselExampleCaptions" role="button"
+                            data-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="prices" class="scroll-fix">
+
+            <div class="jumbotron jumbotron-fluid">
+                <div class="wrapper">
+                    <h2>cennik</h2>
+                    <div class="underline"></div>
+
+                    <div class="price-wrap row text-center justify-content-center">
+
+                        <div class="col-md-6 col-xl-4">
+                            <div class="price-box">
+                                <h3>mobile</h3>
+                                <hr>
+                                <p><span>Urządzenia:</span> <i class="fas fa-mobile-alt"></i> </p>
+                                <p><span>Grafika:</span> Średnia</p>
+                                <p><span>Online:</span> nie</p>
+                                <p class="price">499PLN</p>
+                                <button class="btn btn-secondary">zamawiam</button>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6 col-xl-4">
+                            <div class="price-box">
+                                <h3>mobile & pc</h3>
+                                <hr>
+                                <p><span>Urządzenia:</span> <i class="fas fa-desktop"></i><i
+                                        class="fas fa-mobile-alt"></i> </p>
+                                <p><span>Grafika:</span> dobra</p>
+                                <p><span>Online:</span> tak</p>
+                                <p class="price">499PLN</p>
+                                <button class="btn btn-primary">zamawiam</button>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6 col-xl-4">
+                            <div class="price-box">
+                                <h3>full pack</h3>
+                                <hr>
+                                <p><span>Urządzenia:</span> <i class="fas fa-desktop"></i><i
+                                        class="fas fa-mobile-alt"></i> <i class="fas fa-gamepad"></i> </p>
+                                <p><span>Grafika:</span> najlepsza</p>
+                                <p><span>Online:</span> tak</p>
+                                <p class="price">499PLN</p>
+                                <button class="btn btn-secondary">zamawiam</button>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="price-text wrapper text-center">
+                        <p class="price-info">Skorzystaj z jednego z trzech pakietów lub <a href="contact">skontaktuj
+                                się</a> z nami i ustal indywidualne warunki.</p>
+                        <p class="text-muted">Pakiet <strong>FULL PACK</strong> zawiera wersję gier na urządzenia mobilne, PC oraz konsole </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+    <div style="height: 100vh;"></div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js"
+        integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s"
+        crossorigin="anonymous"></script>
+    <script src="./js/animation.js"></script>
+    <script src="./js/jquery.waypoints.min"></script>
+    <script src="./js/main.js"></script>
 </body>
 
 </html>
