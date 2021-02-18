@@ -10,7 +10,9 @@
 
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
-    <!-- <link rel="stylesheet" href="./css/animate.css"> -->
+    <link rel="stylesheet" href="./css/animate.css">
+    <link rel="stylesheet" type="text/css" href="slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css" />
 
     <link rel="stylesheet" href="./css/main.css">
 
@@ -242,17 +244,17 @@
         <section id="prices" class="scroll-fix">
 
             <div class="jumbotron jumbotron-fluid">
-                <div class="wrapper">
+                <div class="price-wrap">
                     <h2>cennik</h2>
                     <div class="underline"></div>
 
                     <div class="price-wrap row text-center justify-content-center">
 
                         <div class="col-md-6 col-xl-4">
-                            <div class="price-box">
+                            <div class="price-box bg-dark text-light">
                                 <h3>mobile</h3>
                                 <hr>
-                                <p><span>Urządzenia:</span> <i class="fas fa-mobile-alt"></i> </p>
+                                <p><i class="fas fa-mobile-alt"></i> </p>
                                 <p><span>Grafika:</span> Średnia</p>
                                 <p><span>Online:</span> nie</p>
                                 <p class="price">499PLN</p>
@@ -262,26 +264,25 @@
 
                         <div class="col-md-6 col-xl-4">
                             <div class="price-box">
-                                <h3>mobile & pc</h3>
+                                <h3>mob & pc</h3>
                                 <hr>
-                                <p><span>Urządzenia:</span> <i class="fas fa-desktop"></i><i
-                                        class="fas fa-mobile-alt"></i> </p>
+                                <p><i class="fas fa-desktop"></i> <i class="fas fa-mobile-alt"></i> </p>
                                 <p><span>Grafika:</span> dobra</p>
                                 <p><span>Online:</span> tak</p>
-                                <p class="price">499PLN</p>
+                                <p class="price">2499PLN</p>
                                 <button class="btn btn-primary">zamawiam</button>
                             </div>
                         </div>
 
                         <div class="col-md-6 col-xl-4">
-                            <div class="price-box">
+                            <div class="price-box bg-dark text-light">
                                 <h3>full pack</h3>
                                 <hr>
-                                <p><span>Urządzenia:</span> <i class="fas fa-desktop"></i><i
-                                        class="fas fa-mobile-alt"></i> <i class="fas fa-gamepad"></i> </p>
+                                <p><i class="fas fa-desktop"></i> <i class="fas fa-mobile-alt"></i> <i
+                                        class="fas fa-gamepad"></i> </p>
                                 <p><span>Grafika:</span> najlepsza</p>
                                 <p><span>Online:</span> tak</p>
-                                <p class="price">499PLN</p>
+                                <p class="price">4999PLN</p>
                                 <button class="btn btn-secondary">zamawiam</button>
                             </div>
                         </div>
@@ -290,14 +291,164 @@
                     <div class="price-text wrapper text-center">
                         <p class="price-info">Skorzystaj z jednego z trzech pakietów lub <a href="contact">skontaktuj
                                 się</a> z nami i ustal indywidualne warunki.</p>
-                        <p class="text-muted">Pakiet <strong>FULL PACK</strong> zawiera wersję gier na urządzenia mobilne, PC oraz konsole </p>
+                        <p class="text-muted">Pakiet <strong>FULL PACK</strong> zawiera wersję gier na urządzenia
+                            mobilne, PC oraz konsole </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="team" class="scroll-fix">
+            <div class="jumbotron jumbotron-fluid">
+                <div class="team-shadow"></div>
+                <h2>zespół</h2>
+                <div class="underline"></div>
+
+                <div class="card-deck wrapper team-carousel">
+                    <div class="card">
+                        <img src="./img/team/adult-2449725_1920.jpg" class="card-img-top" alt="zdjęcie prezesa">
+                        <div class="card-body">
+                            <h5 class="card-title">ceo</h5>
+                            <p class="card-text">Szef wszystkich szefów. Podwaładni mówią do niego "Panie Przezesie".
+                            </p>
+                        </div>
+                        <div class="card-footer row justify-content-around">
+                            <a href="#"><i class='fab fa-facebook-f'></i></a>
+                            <a href="#"><i class='fab fa-twitter'></i></a>
+                            <a href="#"><i class='fab fa-linkedin-in'></i></a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="./img/team/woman-1320810_1920.jpg" class="card-img-top" alt="szefowa hr">
+                        <div class="card-body">
+                            <h5 class="card-title">hr</h5>
+                            <p class="card-text">Karolina zajmuje się rekrutacjami nowych talentów</p>
+                        </div>
+                        <div class="card-footer row justify-content-around">
+                            <a href="#"><i class='fab fa-facebook-f'></i></a>
+                            <a href="#"><i class='fab fa-twitter'></i></a>
+                            <a href="#"><i class='fab fa-linkedin-in'></i></a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="./img/team/entrepreneur-2326419_1920.jpg" class="card-img-top"
+                            alt="grafik komputerowy">
+                        <div class="card-body">
+                            <h5 class="card-title">grafik</h5>
+                            <p class="card-text">Adrian jest grafikiem z długoletnim stażem na L4.</p>
+                        </div>
+                        <div class="card-footer row justify-content-around">
+                            <a href="#"><i class='fab fa-facebook-f'></i></a>
+                            <a href="#"><i class='fab fa-twitter'></i></a>
+                            <a href="#"><i class='fab fa-linkedin-in'></i></a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="./img/team/building-2762241_1920.jpg" class="card-img-top" alt="złota rączka">
+                        <div class="card-body">
+                            <h5 class="card-title">tomek</h5>
+                            <p class="card-text">To jest Tomek. Czy zajmuje się Tomek wie tylko Pan Prezes.</p>
+                        </div>
+                        <div class="card-footer row justify-content-around">
+                            <a href="#"><i class='fab fa-facebook-f'></i></a>
+                            <a href="#"><i class='fab fa-twitter'></i></a>
+                            <a href="#"><i class='fab fa-linkedin-in'></i></a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="./img/team/women-1209678_1920.jpg" class="card-img-top"
+                            alt="pracownicy działu jakości">
+                        <div class="card-body">
+                            <h5 class="card-title">dział jakoći</h5>
+                            <p class="card-text">Dziewczyny w jakości dbają o jakość naszych produktów.</p>
+                        </div>
+                        <div class="card-footer row justify-content-around">
+                            <a href="#"><i class='fab fa-facebook-f'></i></a>
+                            <a href="#"><i class='fab fa-twitter'></i></a>
+                            <a href="#"><i class='fab fa-linkedin-in'></i></a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section id="achievements" class='scroll-fix'>
+            <div class="jumbotron jumbotron-fluid">
+                <h2>osiągnięcia</h2>
+                <div class="underline"></div>
+                <div class="wrapper row achievement-list">
+                    <div class="col-md-6 col-lg-4 col-xl-2 achievement">
+                        <i class='fas fa-thumbs-up'></i>
+                        <p class="achievement-number">100%</p>
+                        <p class="achievement-text">zadowolonych klientów</p>
+                    </div>
+                    <div class="col-md-6 col-lg-4 col-xl-2 achievement">
+                        <i class='fas fa-trophy'></i>
+                        <p class="achievement-number">37</p>
+                        <p class="achievement-text">zdobytych nagród</p>
+                    </div>
+                    <div class="col-md-6 col-lg-4 col-xl-2 achievement">
+                        <i class='fas fa-user-friends'></i>
+                        <p class="achievement-number">143</p>
+                        <p class="achievement-text">pracowników</p>
+                    </div>
+                    <div class="col-md-6 col-lg-4 col-xl-2 achievement">
+                        <i class='far fa-building'></i>
+                        <p class="achievement-number">7</p>
+                        <p class="achievement-text">biur na całym świecie</p>
+                    </div>
+                    <div class="col-md-6 col-lg-4 col-xl-2 achievement">
+                        <i class='fas fa-dice'></i>
+                        <p class="achievement-number">58</p>
+                        <p class="achievement-text">stworzonych aplikacji</p>
+                    </div>
+                    <div class="col-md-6 col-lg-4 col-xl-2 achievement">
+                        <i class='fas fa-share-alt'></i>
+                        <p class="achievement-number">80.000</p>
+                        <p class="achievement-text">fanów w mediach społecznościowych</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="scroll-fix">
+            <div class="jumbotron jumbotron-fluid">
+                <div class="contact-shadow"></div>
+                <h2>kontakt</h2>
+                <div class="underline"></div>
+                <div class="wrapper row text-center contact-us">
+                    <div class="contact-item col-sm-6 col-lg-4 order-1 order-lg-1">
+                        <h3>siedziba główna</h3>
+                        <p>ul. Jakaś 7</p>
+                        <p>00-00 Gdzieś</p>
+                        <p>+48 000 000 000</p>
+                        <p>mail@mail.com</p>
+                    </div>
+                    <div class="contact-item col-sm-12 col-lg-4 order-0 order-lg-1">
+                        <h3>social media</h3>
+                        <div class="social-media">
+                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                    <div class="contact-item col-sm-6 col-lg-4 order-1 order-lg-1">
+                        <h3>siedziba w londynie</h3>
+                        <p>000-000 King Street</p>
+                        <p>London 000 000</p>
+                        <p>+44 20 0000 0000</p>
+                        <p>mail-london@mail.com</p>
                     </div>
                 </div>
             </div>
         </section>
 
     </main>
-    <div style="height: 100vh;"></div>
+    <footer>
+        <p>&copy; 2021 ProGramers</p>
+    </footer>
+
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
@@ -310,6 +461,7 @@
         crossorigin="anonymous"></script>
     <script src="./js/animation.js"></script>
     <script src="./js/jquery.waypoints.min"></script>
+    <script type="text/javascript" src="slick/slick.min.js"></script>
     <script src="./js/main.js"></script>
 </body>
 

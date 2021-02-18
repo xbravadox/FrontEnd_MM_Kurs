@@ -20,10 +20,10 @@ body
     max-width: 1920px
     width: 80%
     margin: 0 auto
-    
-    h2
-        text-transform: uppercase
-        text-align: center
+
+h2
+    text-transform: uppercase
+    text-align: center
 
 .underline
     margin: 0 auto 40px
@@ -39,7 +39,6 @@ body
 
 .jumbotron
     margin: 0
-
 
 // NAWIGACJA
 nav
@@ -165,21 +164,184 @@ header
         margin: 15px 0
 
 // PORTFOLIO
-#portfolio
-    h2
-        text-align: center
-        text-transform: uppercase
 
 //CENY
 #prices
+    .jumbotron
+        height: 100vh
+        background-color: #f9f9f9
+
+    .price-wrap
+        max-width: 1920px
+        width: 95%
+        margin: 0 auto
+        text-align: center
+
+    h2
+        text-transform: uppercase
+
     .price-box
-        margin: 20px
-        
+        margin: 20px 10px
+        padding: 30px
+        background-color: #fff
+        box-shadow: 5px 5px 5px rgba(0, 0, 0, .6)
+        transition: transform .3s
 
+    h3
+        text-transform: uppercase
+        color: $blue-color
 
+    span
+        font-weight: bold
 
+    i
+        padding: 0 5px
+        font-size: 23px
 
+    button
+        padding: 10px 20px
+        text-transform: uppercase
 
+    .price
+        font-size: 30px
+        font-weight: bold
+
+.price-box:hover
+    transform: scale(1.05)
+
+.price-text
+    margin-top: 30px
+
+// TEAM
+#team
+    .jumbotron
+        position: relative
+        height: 100vh
+        background-image: url('../img/room-hero.jpg')
+        background-position: center
+        background-size: cover
+        background-attachment: fixed
+        z-index: 0
+
+        h2
+            color: #ddd
+
+    .team-shadow
+        position: absolute
+        top: 0
+        width: 100%
+        height: 100%
+        background-color: rgba(0, 0, 0, .8)
+        z-index: -10
+
+    .card
+        transition: transform .4s
+
+        img
+            height: 400px
+            object-fit: cover
+
+    .row
+        margin-left: 0
+        margin-right: 0
+
+.card:hover
+    transform: scale(.95)
+
+.card-body
+    height: 150px
+
+.card-title
+    text-transform: uppercase
+    font-weight: bold
+
+// ACHIEVEMENTS
+#achievements
+    .jumbotron
+        // height: 100vh
+
+    .achievement-list
+        padding: 20px
+
+    .achievement
+        text-align: center
+
+    i
+        padding: 10px
+        font-size: 48px
+        color: #fff
+        text-shadow: 0 0 5px black
+        transition: transform .3s
+
+    i:hover
+        transform: scale(1.2)
+
+    .achievement-number
+        font-size: 22px
+
+    .achievement-text
+        font-size: 13px
+        text-transform: uppercase
+
+// CONTACT
+#contact
+    .jumbotron
+        position: relative
+        // height: 85vh
+        background-image: url('../img/contact.jpg')
+        background-size: cover
+        background-attachment: fixed
+        z-index: 0
+
+        h2
+            color: #ccc
+
+        .underline
+            background-color: #ccc
+
+    .contact-shadow
+        position: absolute
+        top: 0
+        width: 100%
+        height: 100%
+        background-color: rgba(0, 9, 27, .7)
+        z-index: -10
+
+    .contact-us
+        display: flex
+        align-items: center
+        color: #fff
+
+        .contact-item
+            margin: 15px 0
+
+            h3
+                text-transform: uppercase
+                margin-bottom: 15px
+                letter-spacing: 2px
+
+        .social-media
+            font-size: 30px
+
+            a
+                padding: 15px
+                color: #fff
+                text-shadow: 0 0 5px black
+                transition: color .3s
+
+            a:hover
+                color: #bbb
+
+// FOOTER
+footer
+    display: block
+    // height: 10vh
+    color: #fff
+    font-size: 22px
+
+    p
+        padding: 20px
+        text-align: center
 
 @media (min-width: 375px)
     header
@@ -192,6 +354,3 @@ header
 
     #aboutus-hero
         .jumbotron
-
-
-        

@@ -25,7 +25,7 @@ body {
   margin: 0 auto;
 }
 
-.wrapper h2 {
+h2 {
   text-transform: uppercase;
   text-align: center;
 }
@@ -209,13 +209,225 @@ header .os-animation {
   margin: 15px 0;
 }
 
-#portfolio h2 {
+#prices .jumbotron {
+  height: 100vh;
+  background-color: #f9f9f9;
+}
+
+#prices .price-wrap {
+  max-width: 1920px;
+  width: 95%;
+  margin: 0 auto;
   text-align: center;
+}
+
+#prices h2 {
   text-transform: uppercase;
 }
 
 #prices .price-box {
-  margin: 20px;
+  margin: 20px 10px;
+  padding: 30px;
+  background-color: #fff;
+  -webkit-box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.6);
+          box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.6);
+  -webkit-transition: -webkit-transform .3s;
+  transition: -webkit-transform .3s;
+  transition: transform .3s;
+  transition: transform .3s, -webkit-transform .3s;
+}
+
+#prices h3 {
+  text-transform: uppercase;
+  color: #039dff;
+}
+
+#prices span {
+  font-weight: bold;
+}
+
+#prices i {
+  padding: 0 5px;
+  font-size: 23px;
+}
+
+#prices button {
+  padding: 10px 20px;
+  text-transform: uppercase;
+}
+
+#prices .price {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.price-box:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+
+.price-text {
+  margin-top: 30px;
+}
+
+#team .jumbotron {
+  position: relative;
+  height: 100vh;
+  background-image: url("../img/room-hero.jpg");
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  z-index: 0;
+}
+
+#team .jumbotron h2 {
+  color: #ddd;
+}
+
+#team .team-shadow {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: -10;
+}
+
+#team .card {
+  -webkit-transition: -webkit-transform .4s;
+  transition: -webkit-transform .4s;
+  transition: transform .4s;
+  transition: transform .4s, -webkit-transform .4s;
+}
+
+#team .card img {
+  height: 400px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+#team .row {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.card:hover {
+  -webkit-transform: scale(0.95);
+          transform: scale(0.95);
+}
+
+.card-body {
+  height: 150px;
+}
+
+.card-title {
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+#achievements .achievement-list {
+  padding: 20px;
+}
+
+#achievements .achievement {
+  text-align: center;
+}
+
+#achievements i {
+  padding: 10px;
+  font-size: 48px;
+  color: #fff;
+  text-shadow: 0 0 5px black;
+  -webkit-transition: -webkit-transform .3s;
+  transition: -webkit-transform .3s;
+  transition: transform .3s;
+  transition: transform .3s, -webkit-transform .3s;
+}
+
+#achievements i:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+#achievements .achievement-number {
+  font-size: 22px;
+}
+
+#achievements .achievement-text {
+  font-size: 13px;
+  text-transform: uppercase;
+}
+
+#contact .jumbotron {
+  position: relative;
+  background-image: url("../img/contact.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  z-index: 0;
+}
+
+#contact .jumbotron h2 {
+  color: #ccc;
+}
+
+#contact .jumbotron .underline {
+  background-color: #ccc;
+}
+
+#contact .contact-shadow {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 9, 27, 0.7);
+  z-index: -10;
+}
+
+#contact .contact-us {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #fff;
+}
+
+#contact .contact-us .contact-item {
+  margin: 15px 0;
+}
+
+#contact .contact-us .contact-item h3 {
+  text-transform: uppercase;
+  margin-bottom: 15px;
+  letter-spacing: 2px;
+}
+
+#contact .contact-us .social-media {
+  font-size: 30px;
+}
+
+#contact .contact-us .social-media a {
+  padding: 15px;
+  color: #fff;
+  text-shadow: 0 0 5px black;
+  -webkit-transition: color .3s;
+  transition: color .3s;
+}
+
+#contact .contact-us .social-media a:hover {
+  color: #bbb;
+}
+
+footer {
+  display: block;
+  color: #fff;
+  font-size: 22px;
+}
+
+footer p {
+  padding: 20px;
+  text-align: center;
 }
 
 @media (min-width: 375px) {
