@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Lightbox</title>
+   <link rel="stylesheet" href="./css/lightbox.css">
+   <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+
+   <a href="./img/ceo.jpg" data-lightbox="image-1" data-title="My caption">Image #1</a>
+
+   <a href="./img/one.jpg" data-lightbox="roadtrip">Image #2</a>
+   <a href="./img/two.jpg" data-lightbox="roadtrip">Image #3</a>
+   <a href="./img/three.jpg" data-lightbox="roadtrip">Image #4</a>
+   <a href="./img/four.jpg" data-lightbox="roadtrip">Image #5</a>
+
+   <script src="./js/lightbox-plus-jquery.min.js"></script>
+   <script>
+      lightbox.option({
+        'resizeDuration': 200,
+        'wrapAround': true
+      })
+  </script>
+</body>
+
+</html>
