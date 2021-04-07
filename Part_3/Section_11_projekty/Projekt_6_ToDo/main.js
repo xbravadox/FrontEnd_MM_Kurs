@@ -10,6 +10,7 @@ let $popupInput;  // miejsc wpisywania zadania w popupie
 let $addPopupBtn; // zatwierdzanie zmian w popupie
 let $closeTodoBtn;// button zamykający popup
 let $idNumber = 0;// id zadania
+let $allTasks;
 
 const main = () => {
 	prepareDomElements();
@@ -27,6 +28,7 @@ const prepareDomElements = () => {
 	$popupInput = document.querySelector('.popupInput');
 	$addPopupBtn = document.querySelector('.accept');
 	$closeTodoBtn = document.querySelector('.cancel');
+	$allTasks = $ulList.getElementsByTagName('li')
 };
 
 // tworzenie nowego zadania
@@ -45,12 +47,18 @@ const addNewTask = () => {
 	};
 };
 
+const enterCheck = (e)=>{
+if(e.keyCode === 13){
+	addNewTask();
+};
+};
+
 // tworzenie diva z narzędziami
 const createToolsArea = () => {
 	const toolsPanel = document.createElement('div');
 	toolsPanel.classList.add('tools');
 	$newTask.appendChild(toolsPanel);
-	
+
 	const completeBtn = document.createElement('button');
 	completeBtn.innerHTML = '<i class="fas fa-check"></i>';
 	completeBtn.classList.add('complete');
@@ -74,6 +82,7 @@ const prepareDomEvents = () => {
 	$ulList.addEventListener('click', checkClick);
 	$closeTodoBtn.addEventListener('click', closePopup);
 	$addPopupBtn.addEventListener('click', changeTodo);
+	$todoInput.addEventListener('keyup', enterCheck);
 };
 
 // obsługa kliknięcia w div tools
@@ -84,8 +93,8 @@ const checkClick = (e) => {
 	} else if (e.target.closest('button').className === 'edit') {
 		editTask(e);
 	} else if (e.target.closest('button').className === 'delete') {
-		console.log(e.target);
-	}
+		deleteTask(e);
+	};
 };
 
 // edycja zadania w popupie
@@ -107,11 +116,22 @@ const changeTodo = () => {
 	};
 };
 
-// zamykanie popupu
+// zamykanie popupa
 const closePopup = () => {
 	$popupInfo.innerText = '';
 	$popup.style.display = 'none';
 };
 
+// usuwanie zadania
+const deleteTask = (e) => {
+	const deleteTodo = e.target.closest('li');
+	deleteTodo.remove();
+
+	if ($allTasks.length === 0) {
+		$alertInfo.innerText = 'Brak zadań na liście.';
+	}else{
+		$alertInfo.innerText = '';
+	};
+};
 
 document.addEventListener('DOMContentLoaded', main);
