@@ -1,0 +1,51 @@
+body {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+    background-color: #333;
+}
+
+.text {
+    font-size: 6rem;
+    box-shadow: 0 0 40px 40px rgb(21, 136, 55) inset;
+}
+
+div {
+    color: yellow;
+    font-size: 2rem;
+    text-transform: uppercase;
+    display: block;
+    width: 100%;
+    text-align: center;
+}
+
+.btn,
+.btn:active,
+.btn:focus {
+    box-sizing: border-box;
+    appearance: none;
+    background-color: transparent;
+    border: 3px solid rgb(10, 6, 29);
+    border-radius: 0.6em;
+    color: rgb(129, 123, 123);
+    cursor: pointer;
+    /* display: flex; */
+    align-self: center;
+    font-size: 35px;
+    font-weight: bold;
+    line-height: 1;
+    margin: 20px;
+    padding: 1.2em 2.8em;
+    text-decoration: none;
+    text-align: center;
+    transition: box-shadow 300ms ease-in-out, color 300ms ease-in-out;
+    outline: 0;
+}
+
+.btn:hover {
+    color: #fff;
+    box-shadow: 0 0 40px 40px rgb(21, 136, 55) inset;
+}
+
